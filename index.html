@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Gourmet Restaurant</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Restaurant</title>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <nav>
@@ -17,6 +18,10 @@
         </ul>
         <div class="menu-toggle">
             <span class="hamburger"></span>
+        </div>
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
         </div>
     </nav>
 
@@ -31,42 +36,107 @@
     <section id="menu" class="menu-section">
         <h2>Our Exquisite Menu</h2>
         <div class="menu-container">
-            <div class="menu-item">
-                <img src="./Images/burger.jpg" alt="Gourmet Burger">
-                <h3>Gourmet Burger</h3>
-                <p>Juicy beef patty topped with cheddar cheese, crispy bacon, and fresh avocado.</p>
+            <!-- Pizza Section -->
+            <div class="menu-category">
+                <h3>Pizzas</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="./Images/margherita.jpg" alt="Classic Margherita">
+                        <h4>Classic Margherita</h4>
+                        <p>Fresh mozzarella, basil, and rich tomato sauce</p>
+                        <div class="price-quantity">
+                            <span class="price">$14.99</span>
+                            <button class="add-to-cart" data-product="margherita">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./Images/meat-lovers.jpg" alt="Meat Lover's">
+                        <h4>Meat Lover's</h4>
+                        <p>Pepperoni, sausage, bacon, and ham</p>
+                        <div class="price-quantity">
+                            <span class="price">$19.99</span>
+                            <button class="add-to-cart" data-product="meat-lovers">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./Images/veggie.jpg" alt="Veggie Delight">
+                        <h4>Veggie Delight</h4>
+                        <p>Mushrooms, onions, bell peppers, and olives</p>
+                        <div class="price-quantity">
+                            <span class="price">$17.99</span>
+                            <button class="add-to-cart" data-product="veggie">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="menu-item">
-                <img src="https://th.bing.com/th/id/OIP.lzgap0Cq_a8h7szKNeg-4wHaHa?rs=1&pid=ImgDetMain" alt="Pasta Primavera">
-                <h3>Pasta Primavera</h3>
-                <p>Fresh pasta tossed with seasonal vegetables and a light garlic sauce.</p>
-            </div>
-            <div class="menu-item">
-                <img src="./Images/pizza.jpg" alt="Classic Margherita Pizza">
-                <h3>Classic Margherita Pizza</h3>
-                <p>Wood-fired pizza topped with fresh mozzarella, basil, and a rich tomato sauce.</p>
-            </div>
-            <div class="menu-item">
-                <img src="./Images/cl.jpg" alt="Chocolate Lava Cake">
-                <h3>Chocolate Lava Cake</h3>
-                <p>Warm, gooey chocolate cake served with vanilla ice cream and fresh berries.</p>
+            <!-- Burger Section -->
+            <div class="menu-category">
+                <h3>Burgers</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="./Images/classic-burger.jpg" alt="Classic Burger">
+                        <h4>Classic Burger</h4>
+                        <p>Beef patty, lettuce, tomato, and our special sauce</p>
+                        <div class="price-quantity">
+                            <span class="price">$12.99</span>
+                            <button class="add-to-cart" data-product="classic-burger">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./Images/bacon-cheese.jpg" alt="Bacon Cheeseburger">
+                        <h4>Bacon Cheeseburger</h4>
+                        <p>Beef patty, crispy bacon, cheddar cheese, and caramelized onions</p>
+                        <div class="price-quantity">
+                            <span class="price">$14.99</span>
+                            <button class="add-to-cart" data-product="bacon-cheese">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./Images/mushroom-swiss.jpg" alt="Mushroom Swiss">
+                        <h4>Mushroom Swiss</h4>
+                        <p>Beef patty, sautéed mushrooms, and melted Swiss cheese</p>
+                        <div class="price-quantity">
+                            <span class="price">$13.99</span>
+                            <button class="add-to-cart" data-product="mushroom-swiss">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section">
-            <h2>Contact Us</h2>
-            <p>9/953 Apna Avenue, Food City, FL 55487</p>
-            <p>Email: info@gourmetrestaurant.com</p>
-            <p>Phone: (+91) 876-9001</p>
-        </section>
-    
-        <!-- Footer -->
-        <footer>
-            <p>&copy; 2025 Gourmet Restaurant. All rights reserved.</p>
-        </footer>
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <address>
+                    9/953 Apna Avenue,<br>
+                    Food City, FL 55487
+                </address>
+                <p>Email: <a href="mailto:info@gourmetrestaurant.com">info@gourmetrestaurant.com</a></p>
+                <p>Phone: <a href="tel:+918769001">(91) 876-9001</a></p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/" target="_blank" class="social-link facebook" rel="noopener">Facebook</a>
+                    <a href="#" class="social-link instagram" rel="noopener">Instagram</a>
+                    <a href="#" class="social-link twitter" rel="noopener">Twitter</a>
+                </div>
+            </div>
+            <div class="opening-hours">
+                <h3>Opening Hours</h3>
+                <ul>
+                    <li class="hh">Monday - Thursday: 11am - 10pm</li>
+                    <li class="hh">Friday - Saturday: 11am - 11pm</li>
+                    <li class="hh">Sunday: 12pm - 9pm</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-        <script src="script.js"></script>
+    <div class="cart-container"></div>
+
+    <footer>
+        <p>&copy; 2025 Gourmet Restaurant. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
