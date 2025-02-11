@@ -1,6 +1,7 @@
 # 🍽️ Gourmet Restaurant Website
-A modern, responsive website for Restaurants showcasing their menu and providing essential information to customers. ✨
-Project link :- 🔗 https://arpanpatra111.github.io/My_Restaurent/
+
+A modern, responsive website for Restaurants ✨ showcasing their delicious menu 📜 and providing essential information to customers.👥 <br>
+🌟 Project link 🔗: <https://my-restaurent.vercel.app/> 🚀
 
 ![Website Screenshot](image.png)
 
@@ -20,6 +21,7 @@ Project link :- 🔗 https://arpanpatra111.github.io/My_Restaurent/
 - 📱 Responsive Design
 
 📁 Project Structure
+
 ```
 CopyMY_Restaurent/
 ├── index.html
@@ -40,9 +42,8 @@ CopyMY_Restaurent/
   - 📝 Lobster (for logo and headings)
   - 📝 Open Sans (for body text)
 
-
-
 ## 🌐 Browser Support
+
 The website is compatible with:
 
 - 🌐 Google Chrome (latest)
@@ -57,4 +58,5 @@ The website is compatible with:
 - 🖼️ Include a photo gallery
 
 ## 📄 License
+
 This project is licensed under the MIT License - see the LICENSE file for details. ⚖️
