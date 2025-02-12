@@ -28,11 +28,6 @@ CopyMY_Restaurent/
 ├── styles.css
 ├── image.png
 ├── Images/
-│   ├── burger.jpg
-│   ├── pizza.jpg
-│   └── cl.jpg
-│   ├── download.jpg
-│   └── gourmet.jpg
 └── README.md
 ```
 
